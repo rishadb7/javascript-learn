@@ -1,0 +1,68 @@
+<html>
+    <head>
+        <title>Javascript - Learning</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <link rel="stylesheet" href="css/style.css">
+   </head>
+
+    <body>
+
+        
+         <form id="contact-form" onsubmit="insertToDataBase(event)">
+
+               <div>
+                 <input type="text" name="firstName" id="firstName"  placeholder="First Name"   />
+                 <input type="text" name="lastName"  id="lastName" placeholder="Last  Name"   />
+               </div>
+                <div class="error" id="error1"></div>
+                 
+                <div>
+                 <input type="email" name="email" id="email" placeholder="Email"   />
+                 <input type="text"  name="companyName" id="companyName" placeholder="Company Name"   />
+               </div>
+                <div class="error" id="error2"></div>
+               <div>
+                 <input type="text"  name="phone" id="phone" placeholder="Phone"   />
+                
+               </div>
+                <div class="error" id="error3"></div>
+               <div>
+                  <textarea nam="description" id="description"  placeholder="Description" rows="4" cols="50"></textarea>
+               </div>
+                <div class="error" id="error4"></div>
+               <div>
+                  <button type="submit" >Submit</button>
+               </div>
+
+         </form> 
+
+         
+         <button onclick="getPostsData()">GET Data</button>
+
+         <table id="post-table">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>User Id</th>
+                    <th>Title</th>
+                    <th>Body</th>
+                </tr>
+            
+            </thead>
+            <tbody>
+                  <!-- <tr>
+                    <td>dndn</td>
+                    <td>dngn</td>
+                    <td>dnn</td>
+                    <td>dnndndndndn</td>
+                </tr> -->
+            </tbody>
+         </table>
+          
+
+         <script src="js/index.js"></script>
+
+    </body>
+
+</html>
