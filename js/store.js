@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded",function(){
 
 })
 
-
+//Issue is fixed
 
 function getDataFromApi(id){
 
