@@ -1,0 +1,65 @@
+<html>
+
+<head>
+    <title>news API</title>
+    <link rel="stylesheet" href="news.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+</head>
+
+ 
+
+<h1>News Details</h1>
+<button onclick="getNewsData()">Get Data</button>
+
+
+<div style="display: flex;flex-direction: row; gap: 20px;">
+      <p>Movie Image : </p>
+      <img src="" height="150" width="150" id="movie-image"></img>
+   </div>
+
+   <div style="display: flex;flex-direction: row; gap: 20px;">
+      <p>Movie Name : </p>
+      <p id="movie-name"></p>
+   </div>
+
+    <div style="display: flex;flex-direction: row; gap: 20px;">
+        <p>Movie Description : </p>
+        <p id="movie-description"></p>
+    
+    </div>
+
+    <div style="display: flex;flex-direction: row; gap: 20px;">
+        <p>Movie Rating : </p>
+        <p id="movie-rating"></p>
+    
+    </div>
+
+    <div style="display: flex;flex-direction: row; gap: 20px;">
+        <p>Movie Review : </p>
+        <p id="movie-review"></p>
+    
+    </div>
+
+     <div style="display: flex;flex-direction: column; gap: 20px; min-height: 200px;">
+        <p>Actors : </p>
+        <table id="actors-table">
+            <thead>
+                <tr>
+                    <th style="background-color: red;">Name</th>
+                    <th>Url</th>
+                </tr>
+        
+            </thead>
+            <tbody>
+                
+            </tbody>
+        </table>
+    
+    </div>
+
+
+<script src="news.js"></script>
+</body>
+
+</html>

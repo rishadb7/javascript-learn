@@ -1,0 +1,77 @@
+<html>
+      <head>
+        <title>Store API</title>
+        <link rel="stylesheet" href="css/store.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+      </head>
+      <body>
+
+           <div class="add-new-data">
+                  <h2>Add New Data</h2>
+                  <form id="add-data-form" onsubmit="addDataToApi(event)" class="add-data-form">
+
+                        <div style="display: flex;flex-direction: row; gap: 20px;">
+                            <input type="text" placeholder="Name" id="name"   />
+                            <input type="text" placeholder="Color" id="color"   />
+                        </div>
+                        <div style="display: flex;flex-direction: row; gap: 20px;">
+                            <input type="text" placeholder="Capacity" id="capacity"   />
+                             
+                        </div>
+                        <button class="saveBtn" type="submit">Add</button>
+
+                  </form>
+           </div>
+
+            <div class="update-new-data">
+                  <h2>Update Data</h2>
+                  <input type="text" disabled placeholder="id" id="id"   />
+                   <form id="update-data-form" onsubmit="updateDataToApi(event)"  class="add-data-form">
+
+                        <div style="display: flex;flex-direction: row; gap: 20px;">
+                            <input type="text" placeholder="Name" id="name-update"   />
+                            <input type="text" placeholder="Color" id="color-update"   />
+                        </div>
+                        <div style="display: flex;flex-direction: row; gap: 20px;">
+                            <input type="text" placeholder="Capacity" id="capacity-update"   />
+                             
+                        </div>
+                        <button class="saveBtn" type="submit">Update</button>
+
+                  </form>
+           </div>
+
+
+           <div class="item-table">
+                <table id="item-table">
+                      <thead>
+                          <tr>
+                              <th>
+                                ID
+                            </th>
+                            <th>
+                                Name
+                            </th>
+                             <th>
+                                Color
+                            </th>
+                             <th>
+                                Capacity
+                            </th>
+                             <th>
+                                Action
+                            </th>
+                          </tr>
+                      </thead>
+                      <tbody>
+                          
+                      </tbody>
+                </table>
+           </div>
+   
+           <script src="js/store.js"></script>   
+
+
+      </body>
+</html>

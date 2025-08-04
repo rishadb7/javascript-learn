@@ -1,0 +1,70 @@
+.add-new-data{
+    max-width: fit-content;
+    max-height: 450px;
+    min-height: 250px;
+    background: rgb(6, 203, 230);
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+input{
+    min-height: 30px;
+    background: rgb(230, 222, 222);
+    color: black;
+    font-size: 20px;
+}
+
+.saveBtn{
+    min-height: 30px;
+    background: rgb(226, 18, 174);
+    padding: 8px;
+    min-width: 120px;
+    max-width: 120px;
+}
+
+.add-data-form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.update-new-data{
+    position: absolute;
+    left: 620px;
+    top: 10px;
+    max-width: fit-content;
+    max-height: 450px;
+    min-height: 250px;
+    background: rgb(6, 203, 230);
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+}
+
+
+.item-table{
+    margin-top: 30px;
+}
+
+table{
+    width: 80%;
+    border-collapse: collapse;
+    margin-top: 60px;
+    background: white;
+}
+
+th, td{
+  border: 1px solid #be6f6f;
+  padding: 10px;
+  text-align: left;
+}
+
+th{
+    background: #d4dfe6;
+    color: rgb(0, 0, 0);
+    border: 2px solid red;
+}
